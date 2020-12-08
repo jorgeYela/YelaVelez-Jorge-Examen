@@ -26,7 +26,19 @@ public class Usuario implements Serializable {
 	private List<Telefono> telefonos;
 
 	public Usuario() {
+		//CONSTRUCTOR OBLIGATORIO;
+	}
+
+	public Usuario(int codigo, String nombre, String apellido, String cedula, String correo, String contrasena,
+			List<Telefono> telefonos) {
 		super();
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.cedula = cedula;
+		this.correo = correo;
+		this.contrasena = contrasena;
+		this.telefonos = telefonos;
 	}
 
 	public int getCodigo() {

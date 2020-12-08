@@ -20,7 +20,7 @@ public class Telefono implements Serializable {
 	private String numero;
 	private String tipo;
 	private String operadora;
-	@ManyToOne
+	@OneToOne
 	@JoinColumn
 	private Usuario usu_tel_id;
 
