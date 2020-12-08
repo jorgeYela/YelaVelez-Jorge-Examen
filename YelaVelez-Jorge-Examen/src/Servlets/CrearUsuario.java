@@ -43,9 +43,18 @@ public class CrearUsuario extends HttpServlet {
 			
 			System.out.println("Usuario insertado de forma correcta");
 			
+			response.getWriter().print("<html><head><title>Registro Usuario</title></head>"
+					 + "<body style=\"background-color: #575757;\">"
+					 + "<h2>Bienvenid@ " + usuario.getNombre() + " " + usuario.getApellido() + ", es un gusto contar contigo.</h2>"
+					 + "<p>En nuestro sistema podras guardar tus numeros telefonicos y buscar el de tus amigos.</p>"
+					 + "<a href=\"http://localhost:8080/YelaVelez-Jorge-Examen/public/IniciarSesion.html\">"
+					 + "Para agregar numeros telefonicos a tu perfil, inicia sesion aqui !!</a>"
+					 + "</body>");
+			
 		}catch(Exception e) {
 			
 			System.out.println("Error: " + e.getMessage());
+			response.sendRedirect("http://localhost:8080/YelaVelez-Jorge-Examen/index.html");
 		
 		}
 		
