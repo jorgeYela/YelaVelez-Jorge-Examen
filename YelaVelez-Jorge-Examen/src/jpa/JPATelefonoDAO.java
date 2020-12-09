@@ -13,19 +13,20 @@ public class JPATelefonoDAO extends JPAGenericDAO<Telefono, Integer> implements 
 		super(Telefono.class);
 	}
 	
-	public List<Telefono> listarCompras(int idEmpresa){
-		Query query = em.createQuery("Select c From Compra c WHERE c.em_com_id.codigo = :nombre");
-		query.setParameter("nombre", idEmpresa);
+	public List<Telefono> listarCompras(String correo){
+		Query query = em.createQuery("Select t From Telefono t WHERE t.usu_tel_id_codigo = :idUsuario");
+		query.setParameter("correo", correo);
 		List<Telefono> listc = query.getResultList();
 		return listc;
 	}
 
 	@Override
 	public List<Telefono> listarComprasPorUsuario(int idUsuario) {
-		Query query = em.createQuery("Select c From Compra c WHERE c.us_com_id.codigo = :idUsuario");
+		Query query = em.createQuery("Select t From Telefono t WHERE t.usu_tel_id.codigo = :idUsuario");
 		query.setParameter("idUsuario", idUsuario);
 		List<Telefono> listc = query.getResultList();
 		return listc;
 	}
+
 	
 }
