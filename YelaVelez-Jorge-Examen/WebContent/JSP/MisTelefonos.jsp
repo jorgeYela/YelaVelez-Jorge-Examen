@@ -24,24 +24,24 @@
   		H1 { text-align: center}
  	</STYLE>
 </head>
-<body style="background-color: #575757;">
+<body style="background-color: white;">
 
     <header style="background-color: rgb(42,42,42);" class="container-fluid" id="cabecera">
         <div class="row" >
             <div class="col-xs-11">
-                <img style="height: 80px; width: 350px; margin-bottom: 10px; margin-top: 10px;" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/l1.png"  id="logo">
+                <img style="height: 80px; width: 350px; margin-bottom: 10px; margin-top: 10px;" src="http://localhost:8080/YelaVelez-Jorge-Examen/Imagenes/logo.png"  id="logo">
             </div>
         </div>
     </header>
     
 	<c:set var="lista" scope="request" value="${telefonos}" />
-	<BR><h1 style="font-size: 25px; color: white; ">Mis Telefonos</h1>
+	<BR><h1 style="font-size: 25px; color: black; ">Mis Telefonos</h1>
 	<div style="widh: 30px"></div>
 	
 	<div class="row">
 		<div class="col align-self-start"></div>
 		<div>
-			<table class="table" style="color: white;">
+			<table class="table" style="color: black;">
 				<tr>
 					<td scope="col" style="font-size: 25px"><strong>Id</strong></td>
 					<td scope="col" style="font-size: 25px"><strong>Numero</strong></td>
@@ -146,7 +146,7 @@
     <!-- Footer Elements -->
   
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" style="background-color: #1E1E1E;">� 2020 Copyright:
+    <div class="footer-copyright text-center py-3" style="background-color: #1E1E1E;"> 2020 Copyright:
       <a href="https://www.ups.edu.ec/"> ups.edu.ec</a>
     </div>
     <!-- Copyright -->

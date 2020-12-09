@@ -25,12 +25,12 @@
  	</STYLE>
 
 </head>
-<body style="background-color: #575757;">
+<body style="background-color: white;">
 
     <header style="background-color: rgb(42,42,42);" class="container-fluid" id="cabecera">
         <div class="row" >
             <div class="col-xs-11">
-                <img style="height: 80px; width: 350px; margin-bottom: 10px; margin-top: 10px;" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/l1.png"  id="logo">
+                <img style="height: 80px; width: 350px; margin-bottom: 10px; margin-top: 10px;" src="http://localhost:8080/YelaVelez-Jorge-Examen/Imagenes/logo.png"  id="logo">
             </div>        
         </div>
     </header>
@@ -38,10 +38,9 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class=col-xs-4>
-				<img style="height: 150px; width: 200px; padding-bottom: 20px;" alt="" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/usu.png">
 				<div class="dropdown">
 					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    	<small style = "font-size: 15px" >PRODUCTOS</small>
+				    	<small style = "font-size: 15px" >SERVICIOS</small>
 				  	</button>
 				  	<div  class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/YelaVelez-Jorge-Examen/JSP/CrearTelefono.jsp?correo=<%=request.getParameter("correo") %>&contra=<%=request.getParameter("contra")%>">Añadir Telefono</a>
@@ -49,6 +48,7 @@
 				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/YelaVelez-Jorge-Examen/CerrarSesion">Cerrar Sesion</a>
 				  	</div>
 				</div>
+				<img style="height: 150px; width: 200px; padding-bottom: 10px; margin-left: 450px; margin-top: 40px;" alt="" src="http://localhost:8080/YelaVelez-Jorge-Examen/Imagenes/userLogeado.jpg">
 			</div>
 		</div>		
 	</div>   
@@ -59,14 +59,14 @@
     <c:set var="apellido" scope="request" value="${param.apellido}"/>
     <c:set var="cedula" scope="request" value="${param.cedula}"/>
     
-    <h2 style="color: white; font-size: 35px;">Hola ${nombre}, bienvenid@ a nuestro sitio web</h2>
+    <br><h2 style="color: black; font-size: 35px;">Hola ${nombre}, bienvenid@ a nuestro sitio web</h2>
 
 	<!-- AQUI VA LA IMAGEN -->
 	<br>
-	<p style="color: white; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Nombre:</strong> ${nombre}</p>
-	<p style="color: white; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Apellido:</strong> ${apellido}</p>
-	<p style="color: white; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Cedula:</strong> ${cedula}</p>
-	<p style="color: white; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Correo Electronico:</strong> ${correo}</p>
+	<p style="color: black; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Nombre:</strong> ${nombre}</p>
+	<p style="color: black; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Apellido:</strong> ${apellido}</p>
+	<p style="color: black; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Cedula:</strong> ${cedula}</p>
+	<p style="color: black; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Correo Electronico:</strong> ${correo}</p>
 	
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

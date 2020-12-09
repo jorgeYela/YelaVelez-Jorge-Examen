@@ -16,7 +16,6 @@ public class CrearTelefono extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	
-	Telefono telefono = new Telefono();
 	Tipo tipoO = new Tipo();
 	Operadora operadoraO = new Operadora();
 	TelefonoDAO dao = DAOFactory.getFactory().getTelefonoDAO();
@@ -46,6 +45,7 @@ public class CrearTelefono extends HttpServlet {
 		
 		try {
 			
+			Telefono telefono = new Telefono();
 			telefono.setCodigo(0);
 			telefono.setNumero(numero);
 			telefono.setOpe_tel_id(operadoraO);
@@ -54,12 +54,6 @@ public class CrearTelefono extends HttpServlet {
 			dao.create(telefono);
 			
 			System.out.println("Telefono creado correctamente !!");
-			
-			/*response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
-			out.println("<html><head><title>Registro Numero</title></head><body>"
-					  + "<h2>Numero telefonico creado correctamente</h2>"
-					  + "</body></html>");*/
 			
 			response.sendRedirect("http://localhost:8080/YelaVelez-Jorge-Examen/JSP/VentanaUsuario.jsp?correo="+correo_usuario+"&nombre="+nombre+"&apellido="+apellido+"&cedula="+cedula);
 			

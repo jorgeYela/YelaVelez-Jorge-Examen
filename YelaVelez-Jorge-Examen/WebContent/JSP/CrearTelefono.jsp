@@ -45,7 +45,7 @@
 							</select>
                     	</div>
                     	<div class="form-group">
-    						<INPUT style="font-size: 20px" type="submit" class="btn-info" value="Enviar"> <INPUT style="font-size: 20px" type="reset" class="btn-info" value="Resetear">
+    						<INPUT style="font-size: 20px" type="submit" class="btn-info" value="Registrar"> 
     					</div>
                     </form>
 			</div>
