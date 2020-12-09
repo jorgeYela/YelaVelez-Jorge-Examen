@@ -12,10 +12,21 @@ public class JPADAOFactory extends DAOFactory{
 	}
 
 	@Override
-	public TelefonoDAO getCompraDAO() {
+	public TelefonoDAO getTelefonoDAO() {
 		// TODO Auto-generated method stub
 		return new JPATelefonoDAO();
 	}
-	
+
+	@Override
+	public TipoDAO getTipoDAO() {
+		// TODO Auto-generated method stub
+		return new JPATipoDAO();
+	}
+
+	@Override
+	public OperadoraDAO getOperadoraDAO() {
+		// TODO Auto-generated method stub
+		return new JPAOperadoraDAO();
+	}
 	
 }

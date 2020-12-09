@@ -44,9 +44,9 @@
 				    	<small style = "font-size: 15px" >PRODUCTOS</small>
 				  	</button>
 				  	<div  class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/JPA-PRACTICA/RealizarCompra?correo=<%=request.getParameter("correo") %>&contra=<%=request.getParameter("contra")%>">Realizar Pedido</a>
-				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/JPA-PRACTICA/ComprasUsuario?correo=<%=request.getParameter("correo") %>&contra=<%=request.getParameter("contra")%>">Visualizar Compras</a>
-				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/JPA-PRACTICA/CerrarSesion">Cerrar Sesion</a>
+				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/YelaVelez-Jorge-Examen/JSP/CrearTelefono.jsp?correo=<%=request.getParameter("correo") %>&contra=<%=request.getParameter("contra")%>">Añadir Teléfono</a>
+				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/YelaVelez-Jorge-Examen/ComprasUsuario?correo=<%=request.getParameter("correo") %>&contra=<%=request.getParameter("contra")%>">Visualizar Teléfono</a>
+				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/YelaVelez-Jorge-Examen/CerrarSesion">Cerrar Sesion</a>
 				  	</div>
 				</div>
 			</div>

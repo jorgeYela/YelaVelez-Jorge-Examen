@@ -1,6 +1,6 @@
 package dao;
-import jpa.JPADAOFactory;
 
+import jpa.JPADAOFactory;
 
 public abstract class DAOFactory {
 	
@@ -12,5 +12,10 @@ public abstract class DAOFactory {
         
     public abstract UsuarioDAO getUsuarioDAO();
     
-    public abstract TelefonoDAO getCompraDAO();
+    public abstract TelefonoDAO getTelefonoDAO();
+    
+    public abstract TipoDAO getTipoDAO();
+    
+    public abstract OperadoraDAO getOperadoraDAO();
+    
 }

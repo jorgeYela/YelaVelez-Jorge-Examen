@@ -18,11 +18,15 @@ public class Telefono implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int codigo;
 	private String numero;
-	private String tipo;
-	private String operadora;
 	@OneToOne
 	@JoinColumn
 	private Usuario usu_tel_id;
+	@OneToOne
+	@JoinColumn
+	private Operadora ope_tel_id;
+	@OneToOne
+	@JoinColumn
+	private Tipo tip_tel_id;
 
 	public Telefono() {
 		super();
@@ -44,22 +48,6 @@ public class Telefono implements Serializable {
 		this.numero = numero;
 	}
 
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-
-	public String getOperadora() {
-		return operadora;
-	}
-
-	public void setOperadora(String operadora) {
-		this.operadora = operadora;
-	}
-
 	public Usuario getUsu_tel_id() {
 		return usu_tel_id;
 	}
@@ -68,10 +56,26 @@ public class Telefono implements Serializable {
 		this.usu_tel_id = usu_tel_id;
 	}
 
+	public Operadora getOpe_tel_id() {
+		return ope_tel_id;
+	}
+
+	public void setOpe_tel_id(Operadora ope_tel_id) {
+		this.ope_tel_id = ope_tel_id;
+	}
+
+	public Tipo getTip_tel_id() {
+		return tip_tel_id;
+	}
+
+	public void setTip_tel_id(Tipo tip_tel_id) {
+		this.tip_tel_id = tip_tel_id;
+	}
+
 	@Override
 	public String toString() {
-		return "Telefono [codigo=" + codigo + ", numero=" + numero + ", tipo=" + tipo + ", operadora=" + operadora
-				+ ", usu_tel_id=" + usu_tel_id + "]";
+		return "Telefono [codigo=" + codigo + ", numero=" + numero + ", usu_tel_id=" + usu_tel_id + ", ope_tel_id="
+				+ ope_tel_id + ", tip_tel_id=" + tip_tel_id + "]";
 	}
    
 }

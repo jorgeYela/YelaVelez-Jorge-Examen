@@ -34,7 +34,7 @@ public class ProcesarUsuario extends HttpServlet {
 			String apellido_usuario = usuario.getApellido();
 			String cedula_usuario = usuario.getCedula();
 			
-			response.sendRedirect("http://localhost:8080/YelaVelez-Jorge-Examen/JPSs/VentanaUsuario.jsp?correo="+correo+"&contra="+contra+"&nombre="+nombre_ususario+"&apellido="+apellido_usuario+"&cedula="+cedula_usuario);
+			response.sendRedirect("http://localhost:8080/YelaVelez-Jorge-Examen/JSP/VentanaUsuario.jsp?correo="+correo+"&contra="+contra+"&nombre="+nombre_ususario+"&apellido="+apellido_usuario+"&cedula="+cedula_usuario);
 			
 		} else {
 			

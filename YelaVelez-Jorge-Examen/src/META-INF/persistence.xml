@@ -3,6 +3,8 @@
 	<persistence-unit name="YelaVelez-Jorge-Examen" transaction-type="RESOURCE_LOCAL">
 		<class>Entidades.Usuario</class>
 		<class>Entidades.Telefono</class>
+		<class>Entidades.Tipo</class>
+		<class>Entidades.Operadora</class>
 	<properties>
 		<property name="eclipselink.ddl-generation" value="create-tables"/>
 		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/examen?serverTimezone=UTC"/>
