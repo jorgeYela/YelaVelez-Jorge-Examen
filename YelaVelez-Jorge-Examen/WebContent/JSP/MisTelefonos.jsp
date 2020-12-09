@@ -43,14 +43,12 @@
 		<div>
 			<table class="table" style="color: black;">
 				<tr>
-					<td scope="col" style="font-size: 25px"><strong>Id</strong></td>
 					<td scope="col" style="font-size: 25px"><strong>Numero</strong></td>
 					<td scope="col" style="font-size: 25px"><strong>Operadora</strong></td>
 					<td scope="col" style="font-size: 25px"><strong>Tipo</strong></td>
 				</tr>
 				<c:forEach var="c" items="${lista}">
 					<tr scope="row">
-						<td style="font-size: 18px">${c.codigo}</td>
 						<td style="font-size: 18px">${c.numero}</td>
 						<td style="font-size: 18px">
 							<c:choose>

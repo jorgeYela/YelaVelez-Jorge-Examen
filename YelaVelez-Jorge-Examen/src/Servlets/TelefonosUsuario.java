@@ -42,7 +42,7 @@ public class TelefonosUsuario extends HttpServlet {
 			
 			int codigo_usuario = usuario.getCodigo();
 			
-			listaTelefonos = telefonoDao.listarComprasPorUsuario(codigo_usuario);
+			listaTelefonos = telefonoDao.listarTelefonosPorUsuario(codigo_usuario);
 			
 			request.setAttribute("telefonos", listaTelefonos);
 			

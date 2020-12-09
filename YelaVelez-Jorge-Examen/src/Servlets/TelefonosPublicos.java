@@ -38,7 +38,7 @@ public class TelefonosPublicos extends HttpServlet {
 		
 		try {
 			
-			listaTelefonos = telefonoDao.listarCompras(argumento);
+			listaTelefonos = telefonoDao.listarTelefonos(argumento);
 			
 			request.setAttribute("telefonosPublicos", listaTelefonos);
 			

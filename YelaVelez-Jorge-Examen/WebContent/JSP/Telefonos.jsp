@@ -24,7 +24,7 @@
   		H1 { text-align: center}
  	</STYLE>
 </head>
-<body style="background-color: #575757;">
+<body style="background-color: white;">
 
     <header style="background-color: rgb(42,42,42);" class="container-fluid" id="cabecera">
         <div class="row" >
@@ -35,22 +35,20 @@
     </header>
     
 	<c:set var="lista" scope="request" value="${telefonosPublicos}" />
-	<BR><h1 style="font-size: 25px; color: white; ">Telefonos Obtenidos</h1>
+	<BR><h1 style="font-size: 25px; color: black; ">Telefonos Obtenidos</h1>
 	<div style="widh: 30px"></div>
 	
 	<div class="row">
 		<div class="col align-self-start"></div>
 		<div>
-			<table class="table" style="color: white;">
+			<table class="table" style="color: black;">
 				<tr>
-					<td scope="col" style="font-size: 25px"><strong>Id</strong></td>
 					<td scope="col" style="font-size: 25px"><strong>Numero</strong></td>
 					<td scope="col" style="font-size: 25px"><strong>Operadora</strong></td>
 					<td scope="col" style="font-size: 25px"><strong>Tipo</strong></td>
 				</tr>
 				<c:forEach var="c" items="${lista}">
 					<tr scope="row">
-						<td style="font-size: 18px">${c.codigo}</td>
 						<td style="font-size: 18px">${c.numero}</td>
 						<td style="font-size: 18px">
 							<c:choose>
