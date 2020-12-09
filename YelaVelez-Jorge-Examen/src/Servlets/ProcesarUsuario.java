@@ -30,6 +30,8 @@ public class ProcesarUsuario extends HttpServlet {
 			
 			System.out.println("Usuario: " + usuario.getCorreo() + ", recuperado con exito !!");
 			
+			request.getSession().setAttribute("Sesion", "Logeado");
+			
 			String nombre_ususario = usuario.getNombre();
 			String apellido_usuario = usuario.getApellido();
 			String cedula_usuario = usuario.getCedula();
